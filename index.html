@@ -12,8 +12,8 @@
         <div class="logo">E-Learn</div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Courses</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Login</a></li>
@@ -22,14 +22,14 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="hero" class="hero">
         <h1>Unlock Your Potential with Our Courses</h1>
         <p>Learn from the best instructors around the world.</p>
-        <a href="#" class="cta-button">Explore Courses</a>
+        <a href="#courses" class="cta-button">Explore Courses</a>
     </section>
 
     <!-- Featured Courses -->
-    <section class="featured-courses">
+    <section id="courses" class="featured-courses">
         <h2>Featured Courses</h2>
         <div class="course-list">
             <div class="course">
@@ -49,6 +49,19 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal Structure -->
+    <div id="course-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <img id="modal-image" src="" alt="Course Image">
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to Top">↑</button>
 
     <!-- Footer -->
     <footer>
